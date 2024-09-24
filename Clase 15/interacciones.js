@@ -6,7 +6,7 @@
 5) imprime los numeros del 1 al 10, pero se dentiene al llegar al 5 BREAK
 6) imprime los numeros del 1 al 10, pero salta el 5 CONTINUO
 */
-
+/*
 //1
 for(let i=1;
     i<=10;
@@ -58,3 +58,17 @@ for(let iterador=1;
     }
     console.log(iterador)
 }
+*/
+
+//funciones
+/*alert() */
+
+/*
+//Declaramos la funcion saludar
+function saludar(){
+    alert('Este es el mejor saludo del mundo')
+}
+
+//invocamos la funcion saudar
+saludar()
+*/
