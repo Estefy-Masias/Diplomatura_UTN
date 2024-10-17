@@ -34,10 +34,42 @@ function obtenerProductoPorId(producto_id){
         }
     }
 }
+/*
 let producto_encontrado = obtenerProductoPorId(90)
 if(producto_encontrado){
     console.error('producto no encontrado')
 }
 else{
     console.log('Prodcuto encontrado', producto_encontrado)
+} */
+
+//Una funcion que me permita obtener a todos los productos que su precio sea mayor a 1100
+//Esta funcion retornara un array, que estara compuesto de los elementos que cumplan con la condicion de tener un precio mayor a 1100
+
+/*function ontenerProductosMAyoresA1100() {
+    //esta es la lista donde guardo aquellos productos que cumplan con la condicion
+    let array_resultante =[]
+    for(let producto of productos)
+        if(producto.precio > 1100){
+            array_resultante.push(producto)
+
+        }
+        return array_resultante
+
 }
+let productosCaros = obtenerProductosMayoresA1100()
+console.log(productosCaros)*/
+function obtenerProductosMayoresA1100 (precio) {
+    //Esta es la lista donde guardo aquellos productos que cumplan con la condicion
+    let array_resultante = []
+    for(let producto of productos){
+        if(producto.precio > precio){
+            array_resultante.push(producto)
+        }
+    }
+    return array_resultante
+}
+
+//Ahora hace una funcion que devuelva a productos que esten entre 100 y 200
+let productosCaros = obtenerProductosMayoresA1100(1300)
+console.log(productosCaros)
