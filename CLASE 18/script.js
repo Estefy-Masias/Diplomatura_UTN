@@ -59,7 +59,7 @@ else{
 }
 let productosCaros = obtenerProductosMayoresA1100()
 console.log(productosCaros)*/
-function obtenerProductosMayoresA1100 (precio) {
+/*function obtenerProductosMayoresA1100 (precio) {
     //Esta es la lista donde guardo aquellos productos que cumplan con la condicion
     let array_resultante = []
     for(let producto of productos){
@@ -73,3 +73,24 @@ function obtenerProductosMayoresA1100 (precio) {
 //Ahora hace una funcion que devuelva a productos que esten entre 100 y 200
 let productosCaros = obtenerProductosMayoresA1100(1300)
 console.log(productosCaros)
+
+//Crear una funcion que me permita dado un id, obtener la posicion del elemento en el array. SI no lo encuentra debe devolver -1
+//obtenerPosicionDelProductoPorId(2) //retorna 1
+//obtenerPosicionDelProductoPorId(20) //retornar -1
+//Recomendacion: Ver que bucle conviene usar
+
+/* 
+Sacar el promedio de algo:
+const edades = [70, 60, 30, 20, 20, 40, 45]
+let sumatoria = 0
+for(let edad of edades){
+    sumatoria = sumatoria + edad
+}
+let promedio = sumatoria / edades.length 
+*/
+
+let numero1= prompt('Ingrese un numero')
+let numero2= prompt('ingrese otro numero')
+
+let resultado=Number(numero1) + Number(numero2)
+let texto= document.getElementById('resultado')
